@@ -4,48 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-            display: grid;
-            place-items: center;
-            height: 100vh;
-            background: linear-gradient(to bottom right, #fc0, #f60);
-        }
-
-        .game-container{
-            display: grid;
-            grid-template-columns: repeat(20, 30px);
-            grid-template-rows: repeat(20, 30px);
-            border: 2px solid #fff;
-            background: linear-gradient(to top left, lightgreen, green);
-        }
-
-        .my-snake{
-            border: 2px solid cyan;
-            background-color: #2f55ff;
-            border-radius: 50%;
-        }
-
-        h1{
-            font-family: Arial, Helvetica, sans-serif;
-            color: lightgreen;
-            text-shadow: 2px 2px 4px #000;
-        }
-
-        #my-snake-key{
-            font-size: 30px;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="snake game.css">
 </head>
 <body>
     <h1>Meet's Snake Game!!</h1>
     <div class="game-container">
-        <div class="my-snake" style="grid-row: 10; grid-column: 10;" id="snake"></div>
+        <div class="apple" style="grid-row: 15; grid-column: 18;" id="apple"></div>
+        <div class="snake-head" style="grid-row: 1; grid-column: 3;" id="snake-head"></div>
+        <div class="snake-tail" style="grid-row: 1; grid-column: 1;" id="snake-tail"></div>
+        <div class="snake-body" style="grid-row: 1; grid-column: 2;" id="snake-body1"></div>
     </div>
-    <h2 id="my-snake-key">You Pressed: </h2>
     <script src="snake game.js"></script>
+
+    <div class="button-container">
+        <button id="up" class="buttons" style="grid-row: 1; grid-column: 2;" ></button>></button>
+        <button class="buttons" style="grid-row: 2; grid-column: 1;" id="left"></button>
+        <button class="buttons" style="grid-row: 2; grid-column: 3;" id="right"></button>
+        <button class="buttons" style="grid-row: 3; grid-column: 2;" id="down"></button>
+    </div>
 </body>
 </html>
